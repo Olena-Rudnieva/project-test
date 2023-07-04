@@ -31,6 +31,7 @@ class BooksApiService {
     const url = `${BooksApiService.URL}${BooksApiService.ENDPOINT_TOP_BOOKS}`;
 
     const { data } = await axios.get(url);
+    console.log(data);
     return data;
   }
 
